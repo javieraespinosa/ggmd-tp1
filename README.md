@@ -27,14 +27,19 @@ docker compose up
 Execute in a **new terminal**:
 
 ```sh
+# connect to postgres 17
 docker exec -it pgdb psql -U postgres 
+
+# connect to citus 16
+docker exec -it citus psql -U postgres 
+
 ```
 
 * Query
 
 ```sql
-\c insee
-\dt
+\c insee 
+\dt 
 SELECT * FROM region LIMIT 10;
 ```
 
