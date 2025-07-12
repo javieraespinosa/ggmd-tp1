@@ -2,4 +2,7 @@ services:
   pgdb:
     image: jaeo/ggmd
     container_name: pgdb
+  citus:
+    image: jaeo/ggmd:citus
+    container_name: citus
     
