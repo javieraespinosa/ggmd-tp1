@@ -1,0 +1,5 @@
+services:
+  pgdb:
+    image: jaeo/ggmd
+    container_name: pgdb
+    

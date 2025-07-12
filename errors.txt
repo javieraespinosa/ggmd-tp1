@@ -1,0 +1,24 @@
+2025-07-11 15:02:52.556 UTC [63] ERROR:  role "etum2" does not exist
+psql:/ggmd_tp1_data.sql:34: ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.556 UTC [63] STATEMENT:  ALTER TABLE public.commune OWNER TO etum2;
+CREATE TABLE
+2025-07-11 15:02:52.557 UTC [63] ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.557 UTC [63] STATEMENT:  ALTER TABLE public.departement OWNER TO etum2;
+psql:/ggmd_tp1_data.sql:48: ERROR:  role "etum2" does not exist
+CREATE TABLE
+2025-07-11 15:02:52.560 UTC [63] ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.560 UTC [63] STATEMENT:  ALTER TABLE public.mairie OWNER TO etum2;
+psql:/ggmd_tp1_data.sql:69: ERROR:  role "etum2" does not exist
+CREATE TABLE
+psql:/ggmd_tp1_data.sql:87: ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.562 UTC [63] ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.562 UTC [63] STATEMENT:  ALTER TABLE public.personnes OWNER TO etum2;
+CREATE SEQUENCE
+2025-07-11 15:02:52.563 UTC [63] ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.563 UTC [63] STATEMENT:  ALTER TABLE public.personnes_idp_seq OWNER TO etum2;
+psql:/ggmd_tp1_data.sql:102: ERROR:  role "etum2" does not exist
+ALTER SEQUENCE
+CREATE TABLE
+psql:/ggmd_tp1_data.sql:123: ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.565 UTC [63] ERROR:  role "etum2" does not exist
+2025-07-11 15:02:52.565 UTC [63] STATEMENT:  ALTER TABLE public.region OWNER TO etum2;
