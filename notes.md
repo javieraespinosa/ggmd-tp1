@@ -2,6 +2,7 @@
 
 ```sh
 git clone https://forge.univ-lyon1.fr/javier.espinosa2/ggmd-tp1-data.git
+rm -rf ggmd-tp1-data/.git
 mv ggmd-tp1-data/  data/
 gunzip -c data/ggmd_tp1_data.gz > data/ggmd_tp1_data
 ```
@@ -14,11 +15,10 @@ docker run --rm -it --name postgres \
     -e POSTGRES_USER=postgres \
     -e POSTGRES_PASSWORD=postgres \
     -e PGDATA=/data \
-    -v /Users/j/Desktop/ggmd-insee/data/ggmd_tp1_data:/ggmd_tp1_data.sql \
-    -v /Users/j/Desktop/ggmd-insee/init-insee-db.sh:/docker-entrypoint-initdb.d/init-insee-db.sh \
+    -v $(pwd)/data/ggmd_tp1_data:/ggmd_tp1_data.sql \
+    -v $(pwd)/init-insee-db.sh:/docker-entrypoint-initdb.d/init-insee-db.sh \
     postgres:17.5
 
-docker stop postgres && docker rm postgres
 ```
 
 
@@ -36,7 +36,10 @@ docker build -t ggmd-citus -f Dockerfile-citus .
 
 ```
 docker tag ggmd jaeo/ggmd
+docker tag ggmd-citus jaeo/ggmd:citus
+
 docker push jaeo/ggmd
+docker push jaeo/ggmd:citus
 ```
 
 
